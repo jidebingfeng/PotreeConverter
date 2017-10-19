@@ -241,10 +241,8 @@ void printArguments(PotreeArguments &a){
 	try{
 
 		cout << "== params ==" << endl;
-		int i = 0;
-		for(const auto &s : a.source) {
+		for(auto i=0u; i<a.source.size(); ++i) {
 			cout << "source[" << i << "]:         \t" << a.source[i] << endl;
-			++i;
 		}
 		cout << "outdir:            \t" << a.outdir << endl;
 		cout << "spacing:           \t" << a.spacing << endl;
