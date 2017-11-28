@@ -5,7 +5,7 @@ git clone https://github.com/jidebingfeng/PotreeConverter.git
 make
 
 
-sudo ln -s /home/zlong/dev/workspaces/PotreeConverter/build/PotreeConverter/PotreeConverter /usr/bin/PotreeConverterll
+sudo ln -s /home/zlong/dev/workspaces/PotreeConverter/build/PotreeConverter/PotreeConverter /usr/bin/PotreeConverter
 
 
 
