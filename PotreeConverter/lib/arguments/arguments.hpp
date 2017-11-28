@@ -85,8 +85,8 @@ private:
 			return false;
 		};
 
-		int start = 0;
-		for (int i = 0; i < str.size(); i++) {
+		unsigned int start = 0;
+		for (auto i = 0u; i < str.size(); i++) {
 			if (isDelimiter(str[i])) {
 				if (start < i) {
 					auto token = str.substr(start, i - start);
@@ -256,7 +256,7 @@ public:
 		}
 		keyColumnLength = keyColumnLength + 2;
 
-		for (int i = 0; i < argdefs.size(); i++) {
+		for (auto i = 0u; i < argdefs.size(); i++) {
 			keys[i].resize(keyColumnLength, ' ');
 			ss << keys[i] << argdefs[i].description << endl;
 		}
